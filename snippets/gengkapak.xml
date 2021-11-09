@@ -26,4 +26,37 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
 
+  <!-- Device repositories -->
+  <project path="device/gengkapak/sepolicy" name="platform_device_gengkapak_sepolicy" remote="gengkapak-ssh" />
+  <project path="device/qcom/sepolicy-legacy-um" name="platform_device_qcom_sepolicy-legacy-um" remote="gengkapak-ssh" />
+  <project path="device/qcom/sepolicy_vndr" name="platform_device_qcom_sepolicy_vndr" remote="gengkapak-ssh" />
+
+  <!-- External repositories -->
+  <project path="external/json-c" name="platform_external_json-c" remote="gengkapak-ssh" />
+  <project path="external/tinycompress" name="platform_external_tinycompress" remote="gengkapak-ssh" />
+  <project path="external/tinyxml" name="platform_external_tinyxml" remote="gengkapak-ssh" />
+
+  <!-- Frameworks repositories -->
+  <project path="frameworks/av" name="platform_frameworks_av" remote="gengkapak-ssh" />
+  <project path="frameworks/base" name="platform_frameworks_base" remote="gengkapak-ssh" />
+  <project path="frameworks/native" name="platform_frameworks_native" remote="gengkapak-ssh" />
+
+  <!-- Packages repositories -->
+  <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" remote="gengkapak-ssh" />
+  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="gengkapak-ssh" />
+  <project path="packages/apps/SettingsIntelligence" name="platform_packages_apps_SettingsIntelligence" remote="gengkapak-ssh" />
+  <project path="packages/apps/SlavHouse" name="platform_packages_apps_SlavHouse" remote="gengkapak-ssh" />
+
+  <!-- Prebuilts repositories -->
+  <project path="prebuilts/tools-extras" name="platform_prebuilts_tools-extras" remote="gengkapak-ssh" />
+
+  <!-- System repositories -->
+  <project path="system/core" name="platform_system_core" remote="gengkapak-ssh" />
+  <project path="system/sepolicy" name="platform_system_sepolicy" remote="gengkapak-ssh" />
+  <project path="system/vold" name="platform_system_vold" remote="gengkapak-ssh" />
+
+  <!-- Vendor repositories -->
+  <project path="vendor/custom-preference" name="platform_vendor_custom-preference" remote="gengkapak-ssh" />
+  <project path="vendor/gengkapak" name="platform_vendor_gengkapak" remote="gengkapak-ssh" />
+
 </manifest>
