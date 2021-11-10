@@ -51,6 +51,7 @@
   <project path="prebuilts/tools-extras" name="platform_prebuilts_tools-extras" remote="gengkapak-ssh" />
 
   <!-- System repositories -->
+  <project path="system/apex" name="platform_system_apex" remote="gengkapak-ssh" />
   <project path="system/core" name="platform_system_core" remote="gengkapak-ssh" />
   <project path="system/sepolicy" name="platform_system_sepolicy" remote="gengkapak-ssh" />
   <project path="system/vold" name="platform_system_vold" remote="gengkapak-ssh" />
