@@ -8,6 +8,7 @@
   <remote name="gitlab-ssh" fetch="ssh://git@gitlab.com" />
   <remote name="gengkapak" fetch="https://github.com/GengKapak-Project" revision="refs/heads/12.0" />
   <remote name="gengkapak-ssh" fetch="ssh://git@github.com/GengKapak-Project" revision="refs/heads/12.0" />
+  <remote name="gengkapak-gapps" fetch="https://gitlab.com/GengKapak-GApps" revision="refs/heads/12.0" />
 
   <!-- Repositories -->
   <project path="manifest" name="platform_manifest" remote="gengkapak-ssh" />
@@ -94,6 +95,7 @@
   <!-- Vendor repositories -->
   <project path="vendor/custom-preference" name="platform_vendor_custom-preference" remote="gengkapak-ssh" />
   <project path="vendor/gengkapak" name="platform_vendor_gengkapak" remote="gengkapak-ssh" />
+  <project path="vendor/gms" name="platform_vendor_gms" remote="gengkapak-gapps" />
   
   <!-- Vendor QCOM's repositories -->
   <project path="vendor/qcom/opensource/commonsys-intf/display" name="platform_vendor_qcom_opensource_commonsys-intf_display" remote="gengkapak-ssh" />
