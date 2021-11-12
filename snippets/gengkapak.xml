@@ -49,6 +49,7 @@
   <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="gengkapak-ssh" />
   <project path="packages/apps/SettingsIntelligence" name="platform_packages_apps_SettingsIntelligence" remote="gengkapak-ssh" />
   <project path="packages/apps/SlavHouse" name="platform_packages_apps_SlavHouse" remote="gengkapak-ssh" />
+  <project path="packages/apps/ThemePicker" name="platform_packages_apps_ThemePicker" remote="gengkapak-ssh" />
 
   <!-- Prebuilts repositories -->
   <project path="prebuilts/tools-extras" name="platform_prebuilts_tools-extras" remote="gengkapak-ssh" />
