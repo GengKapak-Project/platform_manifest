@@ -12,6 +12,7 @@
   <remove-project name="platform/external/openssh" />
   <remove-project name="platform/external/roboto-fonts" />
   <remove-project name="platform/external/tinycompress" />
+  <remove-project name="platform/external/zlib" />
   <remove-project name="platform/frameworks/av" />
   <remove-project name="platform/frameworks/base" />
   <remove-project name="platform/frameworks/native" />
