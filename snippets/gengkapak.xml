@@ -70,7 +70,6 @@
   <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="gengkapak-ssh" />
   <project path="packages/apps/SettingsIntelligence" name="platform_packages_apps_SettingsIntelligence" remote="gengkapak-ssh" />
   <project path="packages/apps/SimpleDeviceConfig" name="platform_packages_apps_SimpleDeviceConfig" remote="gengkapak-ssh" />
-  <project path="packages/apps/SlavHouse" name="platform_packages_apps_SlavHouse" remote="gengkapak-ssh" />
   <project path="packages/apps/ThemePicker" name="platform_packages_apps_ThemePicker" remote="gengkapak-ssh" />
   <project path="packages/apps/WallpaperPicker2" name="platform_packages_apps_WallpaperPicker2" remote="gengkapak-ssh" />
   <project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" remote="gengkapak-ssh" />
