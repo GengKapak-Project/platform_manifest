@@ -64,6 +64,7 @@
   <project path="hardware/qcom-caf/msm8998/media" name="platform_hardware_qcom_media" groups="qcom,pdk-qcom" remote="gengkapak-ssh" revision="12.0-caf-msm8998" />
   
   <project path="hardware/qcom-caf/sm8150/display" name="platform_hardware_qcom_display" remote="gengkapak-ssh" revision="12.0-caf-sm8150" />  
+  <project path="hardware/qcom-caf/thermal" name="platform_hardware_qcom_thermal" remote="gengkapak-ssh" />
   <project path="hardware/qcom-caf/wlan" name="platform_hardware_qcom_wlan" remote="gengkapak-ssh" revision="12.0-caf" />  
   
   <project path="hardware/xiaomi" name="platform_hardware_xiaomi" remote="gengkapak-ssh" />
