@@ -58,6 +58,9 @@
   <project path="frameworks/base" name="platform_frameworks_base" remote="gengkapak-ssh" />
   <project path="frameworks/native" name="platform_frameworks_native" remote="gengkapak-ssh" />
 
+  <!-- Hals repositories -->
+  <project path="hardware/qcom-caf/sm8150/display" name="patform_hardware_qcom_display" remote="gengkapak-ssh" revision="12.0-caf-sm8150" />
+  
   <!-- Hardwares repositories -->
   <project path="hardware/xiaomi" name="platform_hardware_xiaomi" remote="gengkapak-ssh" />
 
