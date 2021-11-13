@@ -31,6 +31,7 @@
 
   <!-- Device repositories -->
   <project path="device/gengkapak/sepolicy" name="platform_device_gengkapak_sepolicy" remote="gengkapak-ssh" />
+  <project path="device/qcom/sepolicy" name="platform_device_qcom_sepolicy" remote="gengkapak-ssh" />
   <project path="device/qcom/sepolicy-legacy-um" name="platform_device_qcom_sepolicy-legacy-um" remote="gengkapak-ssh" />
   <project path="device/qcom/sepolicy_vndr" name="platform_device_qcom_sepolicy_vndr" remote="gengkapak-ssh" />
 
