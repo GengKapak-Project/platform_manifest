@@ -109,7 +109,6 @@
   
   <!-- Vendor QCOM's repositories -->
   <project path="vendor/qcom/opensource/commonsys-intf/display" name="platform_vendor_qcom_opensource_commonsys-intf_display" remote="gengkapak-ssh" />
-  <project path="vendor/qcom/opensource/core-utils" name="platform_vendor_qcom_opensource_core-utils" remote="gengkapak-ssh" />
   <project path="vendor/qcom/opensource/interfaces" name="platform_vendor_qcom_opensource_interfaces" remote="gengkapak-ssh" />
   <project path="vendor/qcom/opensource/thermal-engine" name="platform_vendor_qcom_opensource_thermal-engine" remote="gengkapak-ssh" />
   <project path="vendor/qcom/opensource/vibrator" name="platform_vendor_qcom_opensource_vibrator" remote="gengkapak-ssh" />
