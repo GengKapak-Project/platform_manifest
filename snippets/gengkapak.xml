@@ -89,7 +89,7 @@
   <project path="packages/modules/Wifi" name="platform_packages_modules_Wifi" remote="gengkapak-ssh" />
 
   <!-- Prebuilts repositories -->
-  <project path="prebuilts/tools-extras" name="platform_prebuilts_tools-extras" remote="gengkapak-ssh" />
+  <project path="prebuilts/tools-gengkapak" name="platform_prebuilts_tools-gengkapak" remote="gengkapak-ssh" />
 
   <!-- System repositories -->
   <project path="system/apex" name="platform_system_apex" remote="gengkapak-ssh" />
