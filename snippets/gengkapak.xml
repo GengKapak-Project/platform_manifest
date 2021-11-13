@@ -41,7 +41,7 @@
   <project path="external/json-c" name="platform_external_json-c" remote="gengkapak-ssh" />
   <project path="external/libncurses" name="platform_external_libncurses" remote="gengkapak-ssh" />
   <project path="external/nano" name="platform_external_nano" remote="gengkapak-ssh" />
-  <project path="external/noto-fonts" name="platform_external_noto-fonts" remote="gengkapak-ssh" />
+  <project path="external/noto-fonts" name="platform_external_noto-fonts" remote="gengkapak-ssh" clone-depth="1" />
   <project path="external/openssh" name="platform_external_openssh" remote="gengkapak-ssh" />
   <project path="external/pigz" name="platform_external_pigz" remote="gengkapak-ssh" />
   <project path="external/roboto-fonts" name="platform_external_roboto-fonts" remote="gengkapak-ssh" />
