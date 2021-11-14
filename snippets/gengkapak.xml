@@ -28,6 +28,7 @@
   
   <project path="art" name="platform_art" remote="gengkapak-ssh" />
   <project path="bionic" name="platform_bionic" remote="gengkapak-ssh" />
+  <project path="libcore" name="platform_libcore" remote="gengkapak-ssh" />
 
   <!-- Device repositories -->
   <project path="device/gengkapak/sepolicy" name="platform_device_gengkapak_sepolicy" remote="gengkapak-ssh" />
