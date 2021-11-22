@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="kapak"
+           fetch="https://github.com/GengKapak-Project" 
+           revision="twelve" />
+
+  <!-- Build -->
+  <project path="build/make" name="platform_build" remote="kapak" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+
+  <project path="build/soong" name="platform_build_soong" remote="kapak" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- General Repos -->
+  <project path="bionic" name="platform_bionic" remote="kapak"/>
+  <project name="platform_libcore" path="libcore" remote="kapak"/>
+  <project name="platform_manifest" path="manifest" remote="kapak"/>
+
+  <!-- SEPolicy -->
+  <project path="device/gengkapak/sepolicy" name="platform_device_gengkapak_sepolicy" revision="twelve" remote="kapak"/>
+  <project path="device/qcom/sepolicy" name="platform_device_qcom_sepolicy" revision="twelve" remote="kapak"/>
+  <project path="device/qcom/sepolicy_vndr" name="platform_device_qcom_sepolicy_vndr" remote="kapak"/>
+  <project path="device/qcom/sepolicy-legacy" name="platform_device_qcom_sepolicy-legacy" revision="twelve" remote="kapak" />
+  <project path="device/qcom/sepolicy-legacy-um" name="platform_device_qcom_sepolicy-legacy-um" revision="twelve" remote="kapak"/>
+
+  <!-- External -->
+  <project path="external/ntfs-3g" name="platform_external_ntfs-3g" remote="kapak"/>
+  <project path="external/selinux" name="platform_external_selinux" remote="kapak"/>
+
+  <!-- Hardware Repos -->
+  <project path="hardware/gengkapak/interfaces" name="platform_hardware_gengkapak_interfaces" remote="kapak"/>
+  <project path="hardware/interfaces" name="platform_hardware_interfaces" remote="kapak"/>
+  <project path="hardware/libhardware" name="platform_hardware_libhardware" remote="kapak"/>
+  <project path="hardware/qcom/data/ipacfg-mgr" name="platform_hardware_qcom_data_ipacfg-mgr" remote="kapak"/>
+  <project path="hardware/qcom/sdm845/data/ipacfg-mgr" name="platform_hardware_qcom_sdm845_data_ipacfg-mgr" remote="kapak" >
+    <linkfile src="os_pickup.bp" dest="hardware/qcom/sdm845/Android.bp" />
+  </project>
+  <project path="hardware/qcom/sdm845/display" name="platform_hardware_qcom_sdm845_display" remote="kapak"/>
+  <project path="hardware/qcom/sdm845/media" name="platform_hardware_qcom_sdm845_media" remote="kapak"/>
+  <project path="hardware/qcom/wlan" name="platform_hardware_qcom_wlan" remote="kapak"/>
+
+  <!-- Packages repos -->
+  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="kapak" />
+  <project path="packages/services/Telecomm" name="platform_packages_services_Telecomm" remote="kapak" />
+  <project path="packages/services/Telephony" name="platform_packages_services_Telephony" remote="kapak" />
+
+  <!-- System Repos -->
+  <project path="system/bpf" name="platform_system_bpf" remote="kapak" />
+  <project path="system/core" name="platform_system_core" remote="kapak" />
+  <project path="system/netd" name="platform_system_netd" remote="kapak" />
+  <project path="system/sepolicy" name="platform_system_sepolicy" remote="kapak" />
+  <project path="system/tools/hidl" name="platform_system_tools_hidl" remote="kapak" />
+  <project path="system/update_engine" name="platform_system_update_engine" remote="kapak" />
+  <project path="system/vold" name="platform_system_vold" remote="kapak" />
+
+  <!-- Vendor -->
+  <project path="vendor/gengkapak" name="platform_vendor_gengkapak" remote="kapak"/>
+  <project path="vendor/gengkapakui" name="platform_vendor_gengkapakui" remote="kapak"/>
+
+</manifest>

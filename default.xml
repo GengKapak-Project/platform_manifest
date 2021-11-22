@@ -2,8 +2,9 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".."
+           fetch="https://android.googlesource.com"
            review="https://android-review.googlesource.com/" />
+
   <default revision="refs/tags/android-12.0.0_r13"
            remote="aosp"
            sync-j="4" />
@@ -1102,5 +1103,9 @@
   <project path="tools/trebuchet" name="platform/tools/trebuchet" groups="tools,cts,pdk,pdk-cw-fs,pdk-fs" />
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
+
+  <include name="snippets/remove.xml"/>
+  <include name="snippets/kapak.xml"/>
+  <include name="snippets/external.xml"/>
 
 </manifest>
