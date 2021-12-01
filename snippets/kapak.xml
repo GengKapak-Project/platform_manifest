@@ -9,6 +9,10 @@
           fetch="ssh://git@github.com/GengKapak-Project"
           revision="twelve" />
 
+ <remote name="gapps"
+         fetch="https://gitlab.com/DerpFest"
+         revision="12" />
+
   <!-- Build -->
   <project path="build/make" name="platform_build" remote="priv" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -70,5 +74,6 @@
   <!-- Vendor -->
   <project path="vendor/gengkapak" name="platform_vendor_gengkapak" remote="kapak"/>
   <project path="vendor/gengkapakui" name="platform_vendor_gengkapakui" remote="priv"/>
+  <project path="vendor/gapps" name="vendor_gms" remote="gapps"/>
 
 </manifest>
