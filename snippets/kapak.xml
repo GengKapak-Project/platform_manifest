@@ -28,22 +28,20 @@
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
+  
+  <!-- External -->
+  <project path="external/ntfs-3g" name="platform_external_ntfs-3g" remote="kapak"/>
+  <project path="external/selinux" name="platform_external_selinux" remote="kapak"/>
+  
+  <!-- Frameworks repos -->
+  <project path="frameworks/av" name="platform_frameworks_av" remote="kapak" />
+  <project path="frameworks/base" name="platform_frameworks_base" remote="kapak" />
+  <project path="frameworks/native" name="platform_frameworks_native" remote="kapak" />
 
   <!-- General Repos -->
   <project path="bionic" name="platform_bionic" remote="kapak"/>
   <project name="platform_libcore" path="libcore" remote="kapak"/>
   <project name="platform_manifest" path="manifest" remote="kapak"/>
-
-  <!-- SEPolicy -->
-  <project path="device/gengkapak/sepolicy" name="platform_device_gengkapak_sepolicy" revision="twelve" remote="kapak"/>
-  <project path="device/qcom/sepolicy" name="platform_device_qcom_sepolicy" revision="twelve" remote="kapak"/>
-  <project path="device/qcom/sepolicy_vndr" name="platform_device_qcom_sepolicy_vndr" remote="kapak"/>
-  <project path="device/qcom/sepolicy-legacy" name="platform_device_qcom_sepolicy-legacy" revision="twelve" remote="kapak" />
-  <project path="device/qcom/sepolicy-legacy-um" name="platform_device_qcom_sepolicy-legacy-um" revision="twelve" remote="kapak"/>
-
-  <!-- External -->
-  <project path="external/ntfs-3g" name="platform_external_ntfs-3g" remote="kapak"/>
-  <project path="external/selinux" name="platform_external_selinux" remote="kapak"/>
 
   <!-- Hardware Repos -->
   <project path="hardware/gengkapak/interfaces" name="platform_hardware_gengkapak_interfaces" remote="kapak"/>
@@ -62,6 +60,13 @@
   <project path="packages/services/Telecomm" name="platform_packages_services_Telecomm" remote="kapak" />
   <project path="packages/services/Telephony" name="platform_packages_services_Telephony" remote="kapak" />
 
+  <!-- SEPolicy -->
+  <project path="device/gengkapak/sepolicy" name="platform_device_gengkapak_sepolicy" revision="twelve" remote="kapak"/>
+  <project path="device/qcom/sepolicy" name="platform_device_qcom_sepolicy" revision="twelve" remote="kapak"/>
+  <project path="device/qcom/sepolicy_vndr" name="platform_device_qcom_sepolicy_vndr" remote="kapak"/>
+  <project path="device/qcom/sepolicy-legacy" name="platform_device_qcom_sepolicy-legacy" revision="twelve" remote="kapak" />
+  <project path="device/qcom/sepolicy-legacy-um" name="platform_device_qcom_sepolicy-legacy-um" revision="twelve" remote="kapak"/>
+  
   <!-- System Repos -->
   <project path="system/bpf" name="platform_system_bpf" remote="kapak" />
   <project path="system/core" name="platform_system_core" remote="kapak" />
