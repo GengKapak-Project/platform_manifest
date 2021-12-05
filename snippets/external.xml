@@ -60,7 +60,7 @@
   <project path="external/ant-wireless/hidl" name="android_external_ant-wireless_hidl" remote="arrow" />
   <project path="external/exfatprogs" name="android_external_exfatprogs" remote="lineage" />
   <project path="external/json-c" name="android_external_json-c" remote="lineage" />
-  <project path="external/tinycompress" name="android_external_tinycompress" remote="lineage"/>
+  <project path="external/tinycompress" name="android_external_tinycompress" remote="arrow"/>
   <project path="system/qcom" name="android_system_qcom" remote="arrow" />
   <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="arrow" />
   <project path="vendor/qcom/opensource/audio" name="android_vendor_qcom_opensource_audio" remote="arrow" />
