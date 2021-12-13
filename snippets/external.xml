@@ -14,15 +14,25 @@
            fetch="https://github.com/PixelExperience"
            revision="twelve" />
 
-  <project path="hardware/qcom-caf/bootctrl" name="android_hardware_qcom_bootctrl" groups="qcom,pdk-qcom" remote="arrow" revision="arrow-12.0-caf" />
-  <project path="hardware/qcom-caf/common" name="android_hardware_qcom-caf_common" remote="arrow" >
+  <!-- Hardware repos - HALS -->
+  <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" remote="pixel">
+    <!-- add guard for AOSP hardware/qcom dir -->
     <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
+    <!-- for AOSP sdm845, we override os_pickup.mk -->
     <linkfile src="os_pickup.mk" dest="hardware/qcom/sdm845/Android.mk" />
-    <linkfile src="os_pickup.mk" dest="hardware/qcom/sm8150/Android.mk" />
+    <!-- add guards for CAF repositories -->
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/apq8084/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8916/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8952/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8960/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8974/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8994/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8996/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8996/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8996-r/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8996-r/Android.mk" />
     <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8998/Android.bp" />
     <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8998/Android.mk" />
-    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm660/Android.bp" />
-    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm660/Android.mk" />
     <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm845/Android.bp" />
     <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm845/Android.mk" />
     <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8150/Android.bp" />
@@ -32,54 +42,80 @@
     <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8350/Android.bp" />
     <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8350/Android.mk" />
   </project>
-  <project path="hardware/qcom-caf/msm8998/audio" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="arrow" revision="arrow-12.0-caf-msm8998" />
-  <project path="hardware/qcom-caf/msm8998/display" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="arrow" revision="arrow-12.0-caf-msm8998" />
-  <project path="hardware/qcom-caf/msm8998/media" name="android_hardware_qcom_media" groups="qcom" remote="arrow" revision="arrow-12.0-caf-msm8998" />
-  <project path="hardware/qcom-caf/sdm660/media" name="android_hardware_qcom_media" groups="qcom,qcom_media" remote="arrow" revision="arrow-12.0-caf-sdm660" />
-  <project path="hardware/qcom-caf/sdm660/audio" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="arrow" revision="arrow-12.0-caf-sdm660" />
-  <project path="hardware/qcom-caf/sdm660/display" name="android_hardware_qcom_display" groups="qcom,qcom_display" remote="arrow" revision="arrow-12.0-caf-sdm660" />
-  <project path="hardware/qcom-caf/sdm845/audio" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="arrow" revision="arrow-12.0-caf-sdm845" />
-  <project path="hardware/qcom-caf/sdm845/display" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="arrow" revision="arrow-12.0-caf-sdm845" />
-  <project path="hardware/qcom-caf/sdm845/media" name="android_hardware_qcom_media" groups="qcom" remote="arrow" revision="arrow-12.0-caf-sdm845" />
-  <project path="hardware/qcom-caf/sm8150/audio" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="arrow" revision="arrow-12.0-caf-sm8150" />
-  <project path="hardware/qcom-caf/sm8150/display" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="arrow" revision="arrow-12.0-caf-sm8150" />
-  <project path="hardware/qcom-caf/sm8150/media" name="android_hardware_qcom_media" groups="qcom" remote="arrow" revision="arrow-12.0-caf-sm8150" />
-  <project path="hardware/qcom-caf/sm8250/audio" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="arrow" revision="arrow-12.0-caf-sm8250" />
-  <project path="hardware/qcom-caf/sm8250/display" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="arrow" revision="arrow-12.0-caf-sm8250" />
-  <project path="hardware/qcom-caf/sm8250/media" name="android_hardware_qcom_media" groups="qcom" remote="arrow" revision="arrow-12.0-caf-sm8250" />
-  <project path="hardware/qcom-caf/sm8350/audio" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="arrow" revision="arrow-12.0-caf-sm8350" />
-  <project path="hardware/qcom-caf/sm8350/display" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="arrow" revision="arrow-12.0-caf-sm8350" />
-  <project path="hardware/qcom-caf/sm8350/media" name="android_hardware_qcom_media" groups="qcom" remote="arrow" revision="arrow-12.0-caf-sm8350" />
-  <project path="hardware/qcom-caf/thermal" name="android_hardware_qcom_thermal" remote="arrow" />
-  <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" groups="qcom_wlan" remote="arrow" revision="arrow-12.0-caf"/>
+  <project path="hardware/qcom-caf/msm8996/audio" name="hardware_qcom-caf_msm8996_audio" remote="pixel" />
+  <project path="hardware/qcom-caf/msm8996-r/audio" name="hardware_qcom-caf_msm8996-r_audio" remote="pixel" />
+  <project path="hardware/qcom-caf/msm8996/display" name="hardware_qcom-caf_msm8996_display" remote="pixel" />
+  <project path="hardware/qcom-caf/msm8996-r/display" name="hardware_qcom-caf_msm8996-r_display" remote="pixel" />
+  <project path="hardware/qcom-caf/msm8996/media" name="hardware_qcom-caf_msm8996_media" remote="pixel" />
+  <project path="hardware/qcom-caf/msm8996-r/media" name="hardware_qcom-caf_msm8996-r_media" remote="pixel" />
+  <project path="hardware/qcom-caf/msm8998/audio" name="hardware_qcom-caf_msm8998_audio" remote="pixel" />
+  <project path="hardware/qcom-caf/msm8998/display" name="hardware_qcom-caf_msm8998_display" remote="pixel" />
+  <project path="hardware/qcom-caf/msm8998/media" name="hardware_qcom-caf_msm8998_media" remote="pixel" />
+  <project path="hardware/qcom-caf/sdm845/audio" name="hardware_qcom-caf_sdm845_audio" remote="pixel" />
+  <project path="hardware/qcom-caf/sdm845/display" name="hardware_qcom-caf_sdm845_display" remote="pixel" />
+  <project path="hardware/qcom-caf/sdm845/media" name="hardware_qcom-caf_sdm845_media" remote="pixel" />
+  <project path="hardware/qcom-caf/sm8150/audio" name="hardware_qcom-caf_sm8150_audio" remote="pixel" />
+  <project path="hardware/qcom-caf/sm8150/display" name="hardware_qcom-caf_sm8150_display" remote="pixel" />
+  <project path="hardware/qcom-caf/sm8150/media" name="hardware_qcom-caf_sm8150_media" remote="pixel" />
+  <project path="hardware/qcom-caf/sm8250/audio" name="hardware_qcom-caf_sm8250_audio" remote="pixel" />
+  <project path="hardware/qcom-caf/sm8250/display" name="hardware_qcom-caf_sm8250_display" remote="pixel" />
+  <project path="hardware/qcom-caf/sm8250/media" name="hardware_qcom-caf_sm8250_media" remote="pixel" />
+  <project path="hardware/qcom-caf/sm8350/audio" name="hardware_qcom-caf_sm8350_audio" remote="pixel" />
+  <project path="hardware/qcom-caf/sm8350/display" name="hardware_qcom-caf_sm8350_display" remote="pixel" />
+  <project path="hardware/qcom-caf/sm8350/media" name="hardware_qcom-caf_sm8350_media" remote="pixel" />
+
+  <!-- Hardware repos -->
+  <project path="hardware/qcom-caf/bootctrl" name="hardware_qcom-caf_bootctrl" remote="pixel" />
+  <project path="hardware/qcom-caf/bt" name="hardware_qcom-caf_bt" remote="pixel" />
+  <project path="hardware/qcom-caf/thermal" name="hardware_qcom-caf_thermal" remote="pixel" />
+  <project path="hardware/qcom-caf/vr" name="hardware_qcom-caf_vr" remote="pixel" />
+  <project path="hardware/qcom-caf/wlan" name="hardware_qcom-caf_wlan" remote="pixel" />
   <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="lineage" />
-  <project path="external/ant-wireless/ant_client" name="android_external_ant-wireless_ant_client" remote="arrow" />
-  <project path="external/ant-wireless/ant_native" name="android_external_ant-wireless_ant_native" remote="arrow" />
-  <project path="external/ant-wireless/ant_service" name="android_external_ant-wireless_ant_service" remote="arrow" />
-  <project path="external/ant-wireless/antradio-library" name="android_external_ant-wireless_antradio-library" remote="arrow" />
-  <project path="external/ant-wireless/hidl" name="android_external_ant-wireless_hidl" remote="arrow" />
+  
+  <!-- External repos -->
+  <project path="external/ant-wireless/ant_client" name="external_ant-wireless_ant_client" remote="pixel" />
+  <project path="external/ant-wireless/ant_native" name="external_ant-wireless_ant_native" remote="pixel" />
+  <project path="external/ant-wireless/ant_service" name="external_ant-wireless_ant_service" remote="pixel" />
+  <project path="external/ant-wireless/antradio-library" name="external_ant-wireless_antradio-library" remote="pixel" />
+  <project path="external/ant-wireless/hidl" name="external_ant-wireless_hidl" remote="pixel" />
   <project path="external/exfatprogs" name="android_external_exfatprogs" remote="lineage" />
   <project path="external/json-c" name="android_external_json-c" remote="lineage" />
   <project path="external/tinycompress" name="android_external_tinycompress" remote="arrow"/>
-  <project path="system/qcom" name="android_system_qcom" remote="arrow" />
-  <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="arrow" />
-  <project path="vendor/qcom/opensource/audio" name="android_vendor_qcom_opensource_audio" remote="arrow" />
-  <project path="vendor/qcom/opensource/commonsys/display" name="android_vendor_qcom_opensource_display-commonsys" remote="lineage" />
-  <project path="vendor/qcom/opensource/commonsys-intf/display" name="vendor_qcom_opensource_display-commonsys-intf" remote="pixel" />
-  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="arrow" />
-  <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="arrow" />
-  <project path="vendor/qcom/opensource/healthd-ext" name="android_vendor_qcom_opensource_healthd-ext" remote="arrow"/>
-  <project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom_opensource_interfaces" remote="arrow" />
-  <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="arrow" />
-  <project path="vendor/qcom/opensource/thermal-engine" name="android_vendor_qcom_opensource_thermal-engine" remote="arrow" />
-  <project path="vendor/qcom/opensource/vibrator" name="vendor_qcom_opensource_vibrator" remote="pixel" />
-  <project path="vendor/qcom/opensource/usb" name="android_vendor_qcom_opensource_usb" remote="arrow" />
-  <project path="vendor/qcom/opensource/wfd-commonsys" name="android_vendor_qcom_opensource_wfd-commonsys" remote="arrow" />
-  <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="pixel" />
+ 
+  <!-- Packages repos -->
+  <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="pixel" />
+  <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" remote="pixel" />
+  
+  <!-- Prebuilts repos -->
   <project path="prebuilts/extract-tools" name="android_prebuilts_extract-tools" clone-depth="1" remote="lineage" />
   <project path="prebuilts/tools-gengkapak" name="android_prebuilts_tools-lineage" clone-depth="1" remote="lineage" />
+  
+  <!-- System Repos -->
+  <project path="system/qcom" name="system_qcom" remote="pixel" />
+  <project path="system/tools/dtbtool" name="system_tools_dtbtool" remote="pixel" />
+  
+  <!-- Tools Repos -->
   <project path="tools/extract-utils" name="android_tools_extract-utils" remote="lineage" />
-  <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="pixel" />
-  <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="lineage" />
+  
+  <!-- Vendor repos -->
+  <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="pixel" />
+  
+  <!-- Vendor repos - QCOM -->
+  <project path="vendor/codeaurora/telephony" name="vendor_codeaurora_telephony" remote="pixel" />
+  <project path="vendor/qcom/opensource/audio" name="vendor_qcom_opensource_audio" remote="pixel" />
+  <project path="vendor/qcom/opensource/audio-hal/st-hal" name="vendor_qcom_opensource_audio-hal_st-hal" remote="pixel" />
+  <project path="vendor/qcom/opensource/commonsys/display" name="vendor_qcom_opensource_commonsys_display" remote="pixel" />
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="vendor_qcom_opensource_display-commonsys-intf" remote="pixel" />
+  <project path="vendor/qcom/opensource/cryptfs_hw" name="vendor_qcom_opensource_cryptfs_hw" remote="pixel" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="vendor_qcom_opensource_data-ipa-cfg-mgr" remote="pixel" />
+  <project path="vendor/qcom/opensource/dataservices" name="vendor_qcom_opensource_dataservices" remote="pixel" />
+  <project path="vendor/qcom/opensource/healthd-ext" name="vendor_qcom_opensource_healthd-ext" remote="pixel" />
+  <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" remote="pixel" />
+  <project path="vendor/qcom/opensource/libfmjni" name="vendor_qcom_opensource_libfmjni" remote="pixel" />
+  <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" remote="pixel" />
+  <project path="vendor/qcom/opensource/thermal-engine" name="vendor_qcom_opensource_thermal-engine" remote="pixel" />
+  <project path="vendor/qcom/opensource/usb" name="vendor_qcom_opensource_usb" remote="pixel" />
+  <project path="vendor/qcom/opensource/vibrator" name="vendor_qcom_opensource_vibrator" remote="pixel" />
+  <project path="vendor/qcom/opensource/wfd-commonsys" name="vendor_qcom_opensource_wfd-commonsys" remote="pixel" />
 
 </manifest>
