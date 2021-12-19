@@ -21,3 +21,8 @@
  lunch gengkapak_<device_codename>-userdebug
  make kapak -j$(nproc --all)
 ```
+### Additional Information
+
+```
+ There are some private repos with remote "priv" you can track from other Rom
+```
