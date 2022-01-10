@@ -64,10 +64,17 @@
   <remove-project name="device/mediatek/wembley-sepolicy" />
   <remove-project name="device/ti/beagle-x15" />
   <remove-project name="device/ti/beagle-x15-kernel" />
-
+  <remove-project name="device/google/gs101-sepolicy" />
+  <remove-project name="device/google/raviole" />
+  <remove-project name="device/google/raviole-kernel" />
+  <remove-project name="device/google/gs-common" />
+  <remove-project name="device/google/gs101" />
   <!-- external -->
   <remove-project name="platform/external/selinux" />
   <remove-project name="platform/external/tinycompress" />
+  <remove-project name="platform/external/armnn" />
+  <remove-project name="platform/external/ComputeLibrary" />
+  <remove-project name="platform/external/android-nn-driver" />
   
   <!-- Frameworks repos -->
   <remove-project name="platform/frameworks/av" />
@@ -82,6 +89,9 @@
   <remove-project name="platform/hardware/qcom/sdm845/display" />
   <remove-project name="platform/hardware/qcom/sdm845/media" />
   <remove-project name="platform/hardware/qcom/wlan" />
+  <remove-project name="platform/hardware/google/gchips" />
+  <remove-project name="platform/hardware/google/graphics/gs101" />
+  <remove-project name="platform/hardware/google/graphics/common" />
 
  <!-- Packages repos -->
   <remove-project name="platform/packages/apps/Browser2" />
